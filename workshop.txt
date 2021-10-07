@@ -1,0 +1,22 @@
+version=1
+id=2617651659
+title=Eggon's Holsters Tweaker
+description=This mod allows to tweak holsters' weght reduction. By default it is set to 75%, but it can be changed by the player by modifying mod's files (instruction shortly).
+description=
+description=[b]Side effect[/b]
+description=As the game does not allow modifying the weight reduction of attachments in form of parametrization, the mod performs a bit of a hack that results in incorrect weight "when not equipped" shown in the tooltip when an item is in holster.
+description=
+description=[b]Existing saves[/b]
+description=The mod should be compatible with existing saves. Unattaching and attaching an item might be required in order to "kick in".
+description=
+description=[b]Compatibility[/b]
+description=The mod should work on all vanilla and custom items that provide (holsters) or use (pistols, etc) attachment slot of type 'holster'.
+description=
+description=[b]Requirements[/b]
+description=This mod requires my utility mod Eggon's Modding Utils to function.
+description=
+description=If you like this mod, hit the like button and check out my other [url=https://steamcommunity.com/profiles/76561198093590691/myworkshopfiles/?section=items&appid=108600]mods![/url] :)
+description=
+description=[img]https://i.imgur.com/cKVBRWw.gif[/img]
+tags=Build 41;Balance;Clothing/Armor;Weapons
+visibility=public
