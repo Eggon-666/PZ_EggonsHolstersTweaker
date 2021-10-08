@@ -21,4 +21,6 @@ EHT.OnItemTransfer = function(item, srcContainer, destContainer, decision)
         EHT.adjustWeight(item, false, "Transfer out")
     end
 end
-Events.OnItemTransfer.Add(EHT.OnItemTransfer)
+
+Events.OnAfterItemTransfer.Add(EHT.OnItemTransfer)
+

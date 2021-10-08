@@ -1,7 +1,7 @@
 -- ENABLE EVENTS
 if EggonsMU then
     print("Enabling events")
-    EggonsMU.config.enableItemTransferEvent()
+    EggonsMU.config.enableAfterItemTransferEvent()
     EggonsMU.config.enableHotbarItemAttachEvent()
     EggonsMU.config.enableHotbarItemUnattachEvent()
 else
