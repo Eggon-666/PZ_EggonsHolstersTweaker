@@ -1,3 +1,25 @@
+local BeltAttachments = {
+    Hammer = true,
+    Screwdriver = true,
+    Knife = true,
+	HammerRotated = true,
+	Nightstick = true,
+	Screwdriver  = true,
+	Wrench = true,
+	MeatCleaver = true,
+	Walkie = true
+}
+
+EHT.itemsWeightReduction = function(item)
+    local attachment = item:getAttachmentType()
+    if  attachment == "Holster" then
+        return EHT.holsterWeightReduction
+    else if BeltAttachments[attachment] then
+        return EHT.beltWeightReduction
+    end
+    return false
+end
+
 EHT.adjustWeight = function(item, decrease, trigger)
     trigger = trigger or ""
     local weight = EHT.getAndSetItemsInitialWeight(item)
