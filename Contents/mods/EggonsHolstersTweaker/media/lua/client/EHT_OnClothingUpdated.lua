@@ -11,4 +11,4 @@ EHT.OnClothingUpdated = function()
         EHT.performClothingCheck = false
     end
 end
-Events.OnClothingUpdated.Add(EHT.OnClothingUpdated)
+-- Events.OnClothingUpdated.Add(EHT.OnClothingUpdated)
