@@ -1,9 +1,11 @@
 -- ENABLE EVENTS
 if EggonsMU then
     print("Enabling events")
-    EggonsMU.config.enableAfterItemTransferEvent()
-    EggonsMU.config.enableHotbarItemAttachEvent()
-    EggonsMU.config.enableHotbarItemUnattachEvent()
+    EggonsMU.config.enableEvent("OnBeforeItemTransfer")
+    EggonsMU.config.enableEvent("OnHotbarItemAttach")
+    EggonsMU.config.enableEvent("OnHotbarItemUnattach")
+    -- EggonsMU.config.enableHotbarItemAttachEvent()
+    -- EggonsMU.config.enableHotbarItemUnattachEvent()
 else
     print("WARNING! Events not enabled!")
 end
@@ -13,6 +15,6 @@ if EHT then
 else
     EHT = {
         performClothingCheck = false,
-        holsterWeightReduction = 75
+        -- holsterWeightReduction = 75
     }
 end

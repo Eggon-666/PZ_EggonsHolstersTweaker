@@ -10,25 +10,32 @@ local BeltAttachments = {
 	Walkie = true
 }
 
+local defaultHolsterReduction = 75
+local defaultBeltReduction = 30
+
 EHT.itemsWeightReduction = function(item)
     local attachment = item:getAttachmentType()
-    if  attachment == "Holster" then
-        return EHT.holsterWeightReduction
-    else if BeltAttachments[attachment] then
-        return EHT.beltWeightReduction
+    print("attachment: ", attachment)
+    if attachment == "Holster" then
+        print("Setting holster reduction")
+        return EHT.holsterWeightReduction or defaultHolsterReduction
+    elseif BeltAttachments[attachment] then
+        print("Setting belt reduction")
+        return EHT.beltWeightReduction or defaultBeltReduction
     end
-    return false
+    return -1
 end
 
-EHT.adjustWeight = function(item, decrease, trigger)
+EHT.adjustWeight = function(item, decrease, trigger, itemsWeightReduction)
+    print("itemsWeightReduction: ", itemsWeightReduction)
     trigger = trigger or ""
     local weight = EHT.getAndSetItemsInitialWeight(item)
     if decrease then
-        weight = weight / 0.7 * ((100 - EHT.holsterWeightReduction) / 100)
+        weight = weight / 0.7 * ((100 - itemsWeightReduction) / 100)
     else
         weight = item:getModData().EHT.initialWeight
     end
-    -- print(trigger .. ", adjusting weight from:  ", item:getActualWeight(), "  to:  ", weight)
+    print(trigger .. ", adjusting weight from:  ", item:getActualWeight(), "  to:  ", weight)
     item:setActualWeight(weight)
 end
 

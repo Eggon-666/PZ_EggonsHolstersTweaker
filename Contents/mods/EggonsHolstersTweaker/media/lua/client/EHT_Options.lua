@@ -35,7 +35,7 @@ local SETTINGS = {
 SETTINGS.names.dropdown1 = "Holsters' weight reduction"
 SETTINGS.options.dropdown1 = 16
 SETTINGS.names.dropdown2 = "Belts' weight reduction"
-SETTINGS.options.dropdown1 = 7
+SETTINGS.options.dropdown2 = 7
 
 if ModOptions and ModOptions.getInstance then
     local settings = ModOptions:getInstance(SETTINGS)
@@ -60,6 +60,7 @@ end
 
 local function setCustomValues()
     EHT.holsterWeightReduction = AvailableReductions[SETTINGS.options.dropdown1]
+    print('Holster red set to: ', AvailableReductions[SETTINGS.options.dropdown1]);
     EHT.beltsWeightReduction = AvailableReductions[SETTINGS.options.dropdown2]
 end
 

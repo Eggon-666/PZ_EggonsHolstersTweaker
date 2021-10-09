@@ -1,4 +1,6 @@
-EHT.OnItemTransfer = function(item, srcContainer, destContainer, decision)
+EHT.OnBeforeItemTransfer = function(eventData)
+    local destContainer = eventData.destContainer
+    local item = eventData.item
     -- print("Transferring item: ", item:getType())
     -- print("To container: ", destContainer)
     -- print("of type: ", destContainer:getType())
@@ -13,7 +15,7 @@ EHT.OnItemTransfer = function(item, srcContainer, destContainer, decision)
         local itemWeight = EHT.getAndSetItemsInitialWeight(item)
 
         if itemWeight > freeCapacity then
-            decision.cancel = true
+            eventData.cancel = true
             local player = getSpecificPlayer(0)
             player:Say("There's not enough space. This item weights " .. tostring(itemWeight) .. ".")
             return
@@ -22,5 +24,5 @@ EHT.OnItemTransfer = function(item, srcContainer, destContainer, decision)
     end
 end
 
-Events.OnAfterItemTransfer.Add(EHT.OnItemTransfer)
+Events.OnBeforeItemTransfer.Add(EHT.OnBeforeItemTransfer)
 
