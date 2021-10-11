@@ -1,0 +1,1 @@
+1. Przy uruchomieniu zaczytują się domyślne wartości dla przedmiotów w kaburach
