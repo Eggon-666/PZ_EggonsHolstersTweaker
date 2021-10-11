@@ -2,12 +2,12 @@ local BeltAttachments = {
     Hammer = true,
     Screwdriver = true,
     Knife = true,
-	HammerRotated = true,
-	Nightstick = true,
-	Screwdriver  = true,
-	Wrench = true,
-	MeatCleaver = true,
-	Walkie = true
+    HammerRotated = true,
+    Nightstick = true,
+    Screwdriver = true,
+    Wrench = true,
+    MeatCleaver = true,
+    Walkie = true
 }
 
 local defaultHolsterReduction = 75
@@ -15,19 +15,20 @@ local defaultBeltReduction = 30
 
 EHT.itemsWeightReduction = function(item)
     local attachment = item:getAttachmentType()
-    print("attachment: ", attachment)
+    local output = -1
+    -- print("attachment: ", attachment)
     if attachment == "Holster" then
-        print("Setting holster reduction")
-        return EHT.holsterWeightReduction or defaultHolsterReduction
+        -- print("Setting holster reduction")
+        output = EHT.holsterWeightReduction or defaultHolsterReduction
     elseif BeltAttachments[attachment] then
-        print("Setting belt reduction")
-        return EHT.beltWeightReduction or defaultBeltReduction
+        -- print("Setting belt reduction")
+        output = EHT.beltsWeightReduction or defaultBeltReduction
     end
-    return -1
+    return output
 end
 
 EHT.adjustWeight = function(item, decrease, trigger, itemsWeightReduction)
-    print("itemsWeightReduction: ", itemsWeightReduction)
+    -- print("itemsWeightReduction: ", itemsWeightReduction)
     trigger = trigger or ""
     local weight = EHT.getAndSetItemsInitialWeight(item)
     if decrease then
@@ -35,7 +36,7 @@ EHT.adjustWeight = function(item, decrease, trigger, itemsWeightReduction)
     else
         weight = item:getModData().EHT.initialWeight
     end
-    print(trigger .. ", adjusting weight from:  ", item:getActualWeight(), "  to:  ", weight)
+    -- print(trigger .. " " .. item:getType() .. ", adjusting weight from:  ", item:getActualWeight(), "  to:  ", weight)
     item:setActualWeight(weight)
 end
 

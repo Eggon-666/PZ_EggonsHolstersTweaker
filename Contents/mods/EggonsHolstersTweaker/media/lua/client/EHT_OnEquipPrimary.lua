@@ -1,6 +1,5 @@
 EHT.equipPrimaryHandler = function(player, item)
     if not item then
-        -- EHT.performClothingCheck = true
         EggonsMU.functions.performActionOnItems(
             EggonsMU.functions.getHotbarItems(),
             function(hotbarItem)
@@ -14,7 +13,7 @@ EHT.equipPrimaryHandler = function(player, item)
     end
     local hotbar = getPlayerHotbar(0)
     local weightReduction = EHT.itemsWeightReduction(item)
-    if  weightReduction >= 0 and hotbar:isInHotbar(item) then
+    if weightReduction >= 0 and hotbar:isInHotbar(item) then
         EHT.adjustWeight(item, false, "Equipped primary", weightReduction)
     end
 end

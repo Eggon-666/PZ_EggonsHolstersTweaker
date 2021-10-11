@@ -54,14 +54,17 @@ if ModOptions and ModOptions.getInstance then
     end
     local dropdown2 = settings:getData("dropdown2")
     function dropdown2:onUpdate(val)
+        -- print("New setting: ", val)
         EHT.beltsWeightReduction = AvailableReductions[val]
+        -- print("New setting: ", EHT.beltsWeightReduction)
     end
 end
 
 local function setCustomValues()
     EHT.holsterWeightReduction = AvailableReductions[SETTINGS.options.dropdown1]
-    print('Holster red set to: ', AvailableReductions[SETTINGS.options.dropdown1]);
+    -- print("Holster red set to: ", EHT.holsterWeightReduction)
     EHT.beltsWeightReduction = AvailableReductions[SETTINGS.options.dropdown2]
+    -- print("Belts set to: ", EHT.beltsWeightReduction)
 end
 
 Events.OnPreMapLoad.Add(setCustomValues)
