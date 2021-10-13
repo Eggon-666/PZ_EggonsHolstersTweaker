@@ -1,19 +1,20 @@
 version=1
 id=2617651659
 title=Eggon's Holsters Tweaker
-description=This mod allows to tweak holsters' weght reduction. By default it is set to 75%, but it can be changed by the player by modifying mod's files (instruction shortly).
+description=This mod allows to tweak Holsters' and Belts' weight reduction. By default it is set to 75% (Holsters) and 30% (Belts, standard vanilla value), but it can be changed by the player using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993]Mod Options[/url] mod. 
 description=
 description=[b]Side effect[/b]
 description=As the game does not allow modifying the weight reduction of attachments in form of parametrization, the mod performs a bit of a hack that results in incorrect weight "when not equipped" shown in the tooltip when an item is in holster.
 description=
 description=[b]Existing saves[/b]
-description=The mod should be compatible with existing saves. Unattaching and attaching an item might be required in order to "kick in".
+description=The mod should be compatible with existing saves.
 description=
 description=[b]Compatibility[/b]
-description=The mod should work on all vanilla and custom items that provide (holsters) or use (pistols, etc) attachment slot of type 'holster'.
+description=The mod should work on all vanilla and custom items that provide (holsters) or use (pistols, etc) attachment slot of type 'Holster'. For belts it serves attachment slots of type 'Hammer', 'Screwdriver', 'Knife', 'HammerRotated', 'Nightstick', 'Wrench', 'MeatCleaver', 'Walkie'.
 description=
 description=[b]Requirements[/b]
 description=This mod requires my utility mod Eggon's Modding Utils to function.
+description=In order to modify setting [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993]Mod Options[/url] mod is required. It is not necessary if you are fine with the 75% default setting. 
 description=
 description=If you like this mod, hit the like button and check out my other [url=https://steamcommunity.com/profiles/76561198093590691/myworkshopfiles/?section=items&appid=108600]mods![/url] :)
 description=
