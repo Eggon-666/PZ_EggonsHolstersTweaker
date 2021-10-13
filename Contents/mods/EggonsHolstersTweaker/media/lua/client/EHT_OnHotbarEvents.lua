@@ -9,7 +9,7 @@ EHT.OnHotbarItemAttach = function(itemBeingAttached, slot, slotIndex, slotDef, d
     -- print("Is in hotbar item being attached? ", getPlayerHotbar(0).isInHotbar(itemBeingAttached))
     local hotbar = getPlayerHotbar(0)
     local replacedItem = hotbar.attachedItems[slotIndex]
-    if replacedItem and EHT.hasInitialData(replacedItem) then
+    if replacedItem and replacedItem ~= itemBeingAttached and EHT.hasInitialData(replacedItem) then
         EHT.adjustWeight(replacedItem, false, "Replace")
     end
 end

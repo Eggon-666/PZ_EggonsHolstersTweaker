@@ -1,5 +1,5 @@
 EHT = EHT or {}
-EHT.holsterWeightReduction = 75
+EHT.holsterWeightReduction = EHT.holsterWeightReduction or 75 -- support legacy
 EHT.beltsWeightReduction = 30
 
 local AvailableReductions = {
