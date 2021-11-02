@@ -1,6 +1,8 @@
 -- ENABLE EVENTS
 if EggonsMU then
-    print("Enabling events")
+    -- EggonsMU.config.enableHotbarItemAttachEvent()
+    -- EggonsMU.config.enableHotbarItemUnattachEvent()
+    -- print("Enabling events")
     EggonsMU.config.enableEvent("OnBeforeItemTransfer")
     EggonsMU.config.enableEvent("OnHotbarItemAttach")
     EggonsMU.config.enableEvent("OnHotbarItemUnattach")
