@@ -1,0 +1,21 @@
+VERSION = 1,
+
+option eggonsHolstersTweaker.HolstersWeightReduction
+{
+	type = integer,
+    min = 0,
+	max = 100,
+	default = 75,
+	page = eggonsHolstersTweaker,
+	translation = eggonsHolstersTweaker_HolstersWeightReduction,
+}
+
+option eggonsHolstersTweaker.BeltsWeightReduction
+{
+	type = integer,
+    min = 0,
+	max = 100,
+	default = 30,
+	page = eggonsHolstersTweaker,
+	translation = eggonsHolstersTweaker_BeltsWeightReduction,
+}

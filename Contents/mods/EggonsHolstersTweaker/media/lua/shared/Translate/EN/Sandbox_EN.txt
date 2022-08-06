@@ -1,0 +1,7 @@
+Sandbox_EN = {
+    Sandbox_eggonsHolstersTweaker = "Eggon's Holsters Tweaker",
+    Sandbox_eggonsHolstersTweaker_HolstersWeightReduction = "Holsters' weight reduction (%)",
+    Sandbox_eggonsHolstersTweaker_HolstersWeightReduction_tooltip = "",
+    Sandbox_eggonsHolstersTweaker_BeltsWeightReduction = "Belts' weight reduction (%)",
+    Sandbox_eggonsHolstersTweaker_BeltsWeightReduction_tooltip = "Belts' weight reduction (%)"
+}
