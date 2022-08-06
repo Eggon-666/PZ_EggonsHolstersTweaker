@@ -1,22 +1,21 @@
 version=1
 id=2617651659
 title=Eggon's Holsters Tweaker
-description=This mod allows to tweak Holsters' and Belts' weight reduction. By default it is set to 75% (Holsters) and 30% (Belts, standard vanilla value), but it can be changed by the player using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993]Mod Options[/url] mod. 
-description=
-description=[b]Side effect[/b]
+description=[h2]Features[/h2]
+description=This mod allows to tweak Holsters' and Belts' weight reduction. By default it is set to 75% for Holsters and 30% for Belts (= standard vanilla value), but both can be changed by the player using Sandbox Options. To change the settings mid game you can use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2670674997]Change Sandbox Options[/url] mod. Requires reload after change.
+description=[h3]Side effect[/h3]
 description=As the game does not allow modifying the weight reduction of attachments in form of parametrization, the mod performs a bit of a hack that results in incorrect weight "when not equipped" shown in the tooltip when an item is in holster.
-description=
-description=[b]Existing saves[/b]
+description=[h3]Existing saves[/h3]
 description=The mod should be compatible with existing saves.
-description=
-description=[b]Compatibility[/b]
+description=[h3]Compatibility[/h3]
 description=The mod should work on all vanilla and custom items that provide (holsters) or use (pistols, etc) attachment slot of type 'Holster'. For belts it serves attachment slots of type 'Hammer', 'Screwdriver', 'Knife', 'HammerRotated', 'Nightstick', 'Wrench', 'MeatCleaver', 'Walkie'.
-description=
-description=[b]Requirements[/b]
+description=[h3]Requirements[/h3]
 description=This mod requires my utility mod Eggon's Modding Utils to function.
-description=In order to modify setting [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2169435993]Mod Options[/url] mod is required. It is not necessary if you are fine with the 75% default setting. 
+description=[h3][b]SUPPORT ME[/b][/h3]
+description=If you appreciate my content and want to encourage me to deliver more... consider supporting me on Ko-Fi or Patreon! Also check out [url=https://steamcommunity.com/profiles/76561198093590691/myworkshopfiles/?section=items&appid=108600]my other mods![/url] :)
 description=
-description=If you like this mod, hit the like button and check out  [url=https://steamcommunity.com/profiles/76561198093590691/myworkshopfiles/?section=items&appid=108600]my other mods![/url] :)
+description=[url=https://ko-fi.com/eggon][img]https://i.imgur.com/ULMwSUt.png[/img][/url]
+description=[url=https://www.patreon.com/eggon666][img]https://i.imgur.com/KUfQ5Ma.png[/img][/url]
 description=
 description=[img]https://i.imgur.com/cKVBRWw.gif[/img]
 description=
